@@ -1,0 +1,254 @@
+:root {
+    --orange: #ffa500;
+    --blue: #0000FF;
+    --bgdiv: #919192;
+    --bgfoot: #21006d;
+    --button: #a0c2ee;
+}
+
+* {
+   
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+button {
+    padding: 1%;
+    margin: 2%;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+footer>button {
+     
+    color: rgb(8, 8, 8);
+    font-family: fantasy;
+    font-size: 1.2vw;
+    border: 1px solid black;
+}
+
+footer {
+    width: 100%;
+    justify-content: center;
+    height: 10%;
+    align-items: center;
+    background: var(--bgfoot);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    border: 1px solid black;
+
+}
+
+/* Atividade 1 */
+#flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 80%;
+
+    border: 1px solid black;
+}
+
+#orangeBall {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#blueBall {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+@keyframes changeColor {
+    0% {
+        color: rgb(255, 234, 0);
+    }
+
+    50% {
+        color: rgb(251, 250, 250);
+    }
+
+    100% {
+        color: rgb(32, 0, 128);
+    }
+}
+
+#orangeBall:hover {
+    height: 100%;
+    border-radius: 0%;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transform: scale-y(1.5);
+    border: 1px solid black;
+}
+
+#blueBall:hover {
+    height: 100%;
+    border-radius: 0%;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transform: scale-y(1.5);
+    border: 1px solid black;
+}
+
+/* Atividade 2 */
+#flex2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 80%;
+
+    border: 1px solid black;
+}
+
+#orangeContainer {
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#blueContainer {
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid black;
+}
+
+#orange {
+    margin: 1%;
+    border-radius: 50%;
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#blueBox {
+    margin: 1%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* Atividade 3 */
+#flex3 {
+    box-shadow: #919192 0px 0px 10px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    border: 1px solid black;
+
+}
+
+#headContainer>button {
+    margin: 2%;
+    padding-inline: 2%;
+    border: none;
+
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#headContainer {
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#bodyContainer {
+    height: 40%;
+    width: 90%;
+    margin: 3%;
+    border-bottom: 1px solid grey;
+    border-color: grey;
+}
+
+p {
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+}
+
+#footContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#actions {
+  
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+#actions>button {
+    padding: 4%;
+    border: none;
+    border-radius: 5px;
+  
+    border: 1px solid black;
+}
+
+#logo {
+    justify-content: space-between;
+    width: 25%;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+}
+
+#user {
+    margin: 5%;
+}
+
+#user>p {
+    margin-top: 5%;
+    font-size: 1.2vw;
+}
+
+img {
+    width: 70%;
+}
