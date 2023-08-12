@@ -2,6 +2,8 @@
 
 Este é um pequeno playground para experimentar diferentes layouts usando o FlexBox.
 
+Acesse o projeto em https://yomarcos.github.io/AtividadeflexBox/
+
 ## Como Usar 👇
 
 1. Clone ou baixe este repositório.
